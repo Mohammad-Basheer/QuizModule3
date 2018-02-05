@@ -3,6 +3,13 @@
 getwd()
 setwd("C:/Users/Dell/ExamData")
 
+#This code will be used to perform the assignment instructions for the Week 4 Peer graded assignment.
+#It will be able to merge the training and test sets in one data set using the read.table, cbind, and rbind functions
+#while extracting the measurements of the mean and standard deviation for each measurement using the select function.
+#It will also use descriptive names to name the activities in the data set using the gsub function and
+#will appropriately label the data set.
+#Finally, by using the write.table data, this code will create a test file where the result of this code is stored.
+
 #1.Merging training and the test sets into one data set.
 ####Loading training data set:
 x_train <- read.table("./train/X-train.txt", header = FALSE)
@@ -86,3 +93,4 @@ AveData <- MeanSTD %>%
 
 
 write.table(AveData, file = "AveData.txt", row.names = FALSE, col.names = TRUE)
+
