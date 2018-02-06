@@ -15,8 +15,8 @@ CODE BOOK
 5. Extract dataset with variables with string "mean" and "std"
 6. Replaced activity IDs with the activity labels for readability
 7. Group the dataset based on subject IDs and activity
-8. Calculate mean for the new dataset, saving under "result"
-9. Write the "result" as "avedata.txt" as final output
+8. Calculate mean for the new dataset, saving under "MeanSTD"
+9. Write the "MeanSTD" as "Avedata.txt" as final output
 
 #Below explains the variables used in this activity lifted from the features.txt:
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
