@@ -1,10 +1,24 @@
 
-#CODE BOOK
+CODE BOOK
 
+#This code book details the construction of the code run_analysis.R.
 #This contains the descriptions of the codes and variables used in this project.
-Feature Selection 
-=================
 
+#Before doing the script, make sure the data set is downloaded and saved in the directory you are currently working.
+
+#Study Processes:
+
+1. Import test data, subject id, feature(variable names) dataset into data frames.
+2. Combine the above 3 dataset into one.
+3. Perform same procedures to the train datasets
+4. Combine test and train dataset
+5. Extract dataset with variables with string "mean" and "std"
+6. Replaced activity IDs with the activity labels for readability
+7. Group the dataset based on subject IDs and activity
+8. Calculate mean for the new dataset, saving under "result"
+9. Write the "result" as "avedata.txt" as final output
+
+#Below explains the variables used in this activity lifted from the features.txt:
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -59,8 +73,6 @@ tBodyAccMean
 tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
-
-The complete list of variables of each feature vector is available in 'features.txt'
 
 #Citation: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
           A Public Domain Dataset for Human Activity Recognition Using Smartphones. 
